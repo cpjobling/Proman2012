@@ -1,14 +1,64 @@
-!!! 5
-%html{html_attrs}
+- current_user = 'Chris Jobling'
+- site_name = 'Proman'
+
+!!! Strict
+%html
   %head
-    %title= @title
-    // Buggy on the iPhone4
-    // %meta{:content => "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", :name => "viewport"}
+    %title&= yield(:title) || site_name
+    %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
+    %meta{ :name => "description", :content => "" }/
+    %meta{ :name => "keywords", :content => "" }/
     %link{:href => "stylesheets/stylesheet.css", :media => "all", :rel => "stylesheet", :type => "text/css"}
+    %link{ :href => "stylesheets/screen.css", :media => 'screen, projection', :rel => "stylesheet", :type => "text/css"} 
+    %link{ :href => "stylesheets/ie.css", :media => 'screen, projection', :rel => "stylesheet", :type => "text/css"}   
+    %link{ :href => "stylesheets/print.css", :media => 'print', :rel => "stylesheet", :type => "text/css"}
+    
     %script{:type => "text/javascript", :src => "javascripts/respond.min.js"}
     %script{:type => "text/javascript", :src => "http://code.jquery.com/jquery-1.5.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/modernizr-1.6.min.js"}
     %script{:type => "text/javascript", :src => "javascripts/application.js"}
+    %script{:type => "text/javascript", :src => "javascripts/jquery.form.js"}
+
+    = yield :head
+    
   %body
     .container
-      = yield
+      #navigation
+        = link_to "Home", "/"
+        |
+        - if current_user
+          = link_to_with_highlight "My Account", "/account"
+          |
+          = link_to_with_highlight "Logout", "/logout"
+        - else
+          = link_to_with_highlight "Register", "sign-up"
+          |
+          = link_to_with_highlight "Login", "/login"
+      #header
+        %h1= proman
+        %h2= yield(:title)
+        #navset
+          -# = navigation [:home, :projects, :contact, :about]
+          = yield(:subnav)
+      #content
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}"
+        = yield
+      #sidebar
+        .block
+          %h3= yield :title_sidebar
+          .content
+            %p= yield :sidebar
+      #extra
+      #footer
+        %p
+          %em= yield :slogan
+        %p{:style => "font-size: xx-small; text-align: center;"}
+          = render 'shared/copyright_notice'
+          |
+          = link_to 'Terms of Service', '/about/tos' 
+          |
+          = link_to 'Contact Us', '/about/contact'
+          |
+          = link_to 'Software License', '/about/license'
+

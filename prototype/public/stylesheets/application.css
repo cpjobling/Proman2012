@@ -1,0 +1,1699 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: "" "";
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+}
+
+a img {
+  border: none;
+}
+
+body {
+  background-color: white;
+  color: #333333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eeeeee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: black;
+}
+a:visited {
+  color: #666666;
+}
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #cc0000;
+  color: white;
+}
+#errorExplanation p {
+  color: #333333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+#errorExplanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+form {
+  background: #eeeeee;
+}
+form li {
+  padding: 10px 0px;
+}
+form li li {
+  padding: 0;
+}
+form fieldset {
+  margin-top: 20px;
+}
+form li fieldset {
+  padding: 0;
+}
+form legend, form label {
+  color: #333333;
+}
+form label, form .label {
+  padding-bottom: 5px;
+}
+form label abbr, form .label abbr {
+  color: red;
+}
+form label {
+  line-height: 1.4em;
+  font-size: 13px;
+}
+form legend span {
+  font-size: 1.4em;
+  line-height: 1em;
+}
+form legend span.label {
+  font-size: 1em;
+}
+form select {
+  padding: 3px;
+}
+form input, form textarea, form select {
+  font-family: inherit;
+  font-size: 14px;
+}
+form textarea, form input {
+  border: 1px solid #999999;
+  padding: 6px 8px;
+  line-height: 100%;
+}
+form .date li, form .time li, form .datetime li {
+  margin: 0 0.3em 0 0;
+}
+form #errorExplanation li {
+  margin-left: 15px;
+}
+form form p, form .errors {
+  padding: 3px 0px;
+}
+form .required input, form .required textarea, form .required select {
+  background-color: white;
+}
+form .error input, form .error textarea, form .error select {
+  background-color: #ffcccc;
+  border: 1px solid #ff6666;
+}
+form .optional input, form .optional textarea, form .optional select {
+  background-color: white;
+}
+form .errors {
+  color: #aa0000;
+}
+form .errors li {
+  margin-left: 1.2em;
+}
+form p.inline-errors {
+  color: red;
+}
+form p.inline-hints {
+  color: #777777;
+}
+form .buttons {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 8px;
+}
+form .buttons li {
+  padding-right: 0.5em;
+}
+form .buttons input {
+  border: 1px solid #999999;
+}
+
+body {
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  color: #333333;
+  font-size: 75%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #222222;
+}
+h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.50em;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1.00em;
+}
+
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.50em;
+}
+
+h6 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+p img.left {
+  display: inline;
+  float: left;
+  margin: 1.5em 1.5em 1.5em 0;
+  padding: 0;
+}
+p img.right {
+  display: inline;
+  float: right;
+  margin: 1.5em 0 1.5em 1.5em;
+  padding: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: #000099;
+}
+a:visited {
+  color: #000066;
+}
+a:focus {
+  color: black;
+}
+a:hover {
+  color: black;
+}
+a:active {
+  color: #cc0099;
+}
+
+blockquote {
+  margin: 1.5em;
+  color: #666666;
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+dfn {
+  font-style: italic;
+  font-weight: bold;
+}
+
+sup, sub {
+  line-height: 0;
+}
+
+abbr, acronym {
+  border-bottom: 1px dotted #666666;
+}
+
+address {
+  margin: 0 0 1.5em;
+  font-style: italic;
+}
+
+del {
+  color: #666666;
+}
+
+pre {
+  margin: 1.5em 0;
+  white-space: pre;
+}
+
+pre, code, tt {
+  font: 1em "andale mono", "lucida console", monospace;
+  line-height: 1.5;
+}
+
+li ul, li ol {
+  margin: 0;
+}
+
+ul, ol {
+  margin: 0 1.5em 1.5em 0;
+  padding-left: 3.333em;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+dl {
+  margin: 0 0 1.5em 0;
+}
+dl dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1.5em;
+}
+
+table {
+  margin-bottom: 1.4em;
+  width: 100%;
+}
+
+th {
+  font-weight: bold;
+}
+
+thead th {
+  background: #c3d9ff;
+}
+
+th, td, caption {
+  padding: 4px 10px 4px 5px;
+}
+
+tr.even td {
+  background: #e5ecf9;
+}
+
+tfoot {
+  font-style: italic;
+}
+
+caption {
+  background: #eeeeee;
+}
+
+.quiet {
+  color: #666666;
+}
+
+.loud {
+  color: #111111;
+}
+
+html, body {
+  height: 100%;
+}
+
+#container {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -180px;
+}
+#container #container-footer {
+  height: 180px;
+}
+
+#footer {
+  clear: both;
+  position: relative;
+  height: 180px;
+}
+
+#rails-env {
+  position: fixed;
+  left: 1em;
+  font-weight: bold;
+  padding: 0.2em 0.9em;
+  text-transform: uppercase;
+  display: none;
+}
+
+#rails-env.staging {
+  color: black;
+  background: yellow;
+  border: 2px solid #cccc20;
+  border-top: none;
+  display: block;
+}
+
+#rails-env.development {
+  color: white;
+  background: red;
+  border: 2px solid #cc2020;
+  border-top: none;
+  display: block;
+}
+#rails-env.development .container {
+  width: 800px;
+  padding: 20px;
+  margin: 0 auto;
+  background: white;
+  position: relative;
+}
+#rails-env.development #styles {
+  background-color: #f8f5cd;
+  border: 1px solid #d0cda5;
+  margin-bottom: 12px;
+}
+#rails-env.development #style-switcher, #rails-env.development #input-switcher, #rails-env.development #button-switcher {
+  margin: 0;
+  padding: 4px 0px 4px 12px;
+  border-bottom: 1px solid #d0cda5;
+}
+#rails-env.development #style-switcher strong, #rails-env.development #input-switcher strong, #rails-env.development #button-switcher strong {
+  width: 200px;
+  display: block;
+  float: left;
+  font-weight: normal;
+}
+#rails-env.development #style-switcher a:link, #rails-env.development #style-switcher a:active, #rails-env.development #style-switcher a:focus, #rails-env.development #style-switcher a:visited, #rails-env.development #input-switcher a:link, #rails-env.development #input-switcher a:active, #rails-env.development #input-switcher a:focus, #rails-env.development #input-switcher a:visited, #rails-env.development #button-switcher a:link, #rails-env.development #button-switcher a:active, #rails-env.development #button-switcher a:focus, #rails-env.development #button-switcher a:visited {
+  color: blue;
+}
+#rails-env.development #style-switcher a:hover, #rails-env.development #input-switcher a:hover, #rails-env.development #button-switcher a:hover {
+  color: black;
+  background: transparent;
+}
+#rails-env.development #style-switcher a.active, #rails-env.development #input-switcher a.active, #rails-env.development #button-switcher a.active {
+  color: #888888;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: default;
+}
+#rails-env.development form li label, #rails-env.development form li legend span.label {
+  font-weight: bold;
+}
+#rails-env.development form li li label {
+  font-weight: normal;
+}
+#rails-env.development .stack ul, #rails-env.development .stack ol, #rails-env.development .stack legend, #rails-env.development .stack p {
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .stack li {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rails-env.development .stack fieldset {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .stack fieldset:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .stack abbr, #rails-env.development .stack acronym {
+  border: 0;
+  font-variant: normal;
+  font-weight: normal;
+}
+#rails-env.development .stack ol, #rails-env.development .stack ul {
+  list-style: none;
+}
+#rails-env.development .stack label {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .stack label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .stack input, #rails-env.development .stack textarea {
+  vertical-align: middle;
+}
+#rails-env.development .stack .check_boxes input, #rails-env.development .stack .radio input {
+  margin: 0;
+}
+#rails-env.development .stack .check_boxes label, #rails-env.development .stack .radio label {
+  cursor: pointer;
+}
+#rails-env.development .stack .hidden {
+  display: none;
+}
+#rails-env.development .stack .date li, #rails-env.development .stack .time li, #rails-env.development .stack .datetime li {
+  float: left;
+  width: auto;
+  clear: none;
+}
+#rails-env.development .stack .date label, #rails-env.development .stack .time label, #rails-env.development .stack .datetime label {
+  display: none;
+  width: auto;
+}
+#rails-env.development .stack .date input, #rails-env.development .stack .time input, #rails-env.development .stack .datetime input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .stack .errors {
+  list-style: square;
+}
+#rails-env.development .stack .errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+  float: none;
+  clear: both;
+}
+#rails-env.development .stack .inputs {
+  z-index: 99;
+}
+#rails-env.development .stack .buttons li {
+  float: left;
+}
+#rails-env.development .stack li {
+  *display: inline-block;
+  display: block;
+}
+#rails-env.development .stack li:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .stack li fieldset {
+  border: none;
+  position: relative;
+  margin-top: 0px;
+}
+#rails-env.development .stack li legend {
+  display: block;
+  margin-bottom: 0;
+}
+#rails-env.development .stack li .label {
+  display: block;
+  clear: both;
+  background: transparent;
+}
+#rails-env.development .stack li ol {
+  float: left;
+  margin: 0;
+}
+#rails-env.development .stack li ol li {
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+#rails-env.development .stack fieldset {
+  width: 100%;
+}
+#rails-env.development .stack ol {
+  padding-left: 3%;
+}
+#rails-env.development .stack input {
+  clear: both;
+  float: none;
+}
+#rails-env.development .stack li {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+}
+#rails-env.development .stack li ol {
+  padding: 0;
+}
+#rails-env.development .stack li li {
+  clear: none;
+  width: auto;
+}
+#rails-env.development .stack li fieldset legend, #rails-env.development .stack li fieldset legend .label {
+  display: block;
+  clear: both;
+}
+#rails-env.development .stack li fieldset .label {
+  position: relative;
+}
+#rails-env.development .stack li fieldset label, #rails-env.development .stack li fieldset input {
+  width: auto;
+}
+#rails-env.development .stack .date ol, #rails-env.development .stack .time ol, #rails-env.development .stack .datetime ol {
+  width: 100%;
+}
+#rails-env.development .stack .date li, #rails-env.development .stack .time li, #rails-env.development .stack .datetime li {
+  display: inline;
+  clear: none;
+  float: left;
+  padding-right: 1.5%;
+}
+#rails-env.development .stack .checkbox li, #rails-env.development .stack .radio li {
+  display: block;
+}
+#rails-env.development .stack .checkbox input, #rails-env.development .stack .radio input {
+  border: none;
+}
+#rails-env.development .stack label {
+  display: block;
+  clear: both;
+  float: none;
+  width: 92%;
+}
+#rails-env.development .stack input, #rails-env.development .stack textarea {
+  width: 92%;
+}
+#rails-env.development .stack select {
+  width: auto;
+}
+#rails-env.development .stack .errors li {
+  display: list-item;
+}
+#rails-env.development .stack .buttons ol {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#rails-env.development .stack .buttons li {
+  float: left;
+  width: auto;
+  clear: none;
+  display: inline;
+}
+#rails-env.development .stack .buttons input {
+  width: auto;
+}
+#rails-env.development .stack #errorExplanation {
+  width: 97%;
+}
+#rails-env.development .stack .label {
+  #left: -0.5em;
+  #position: relative;
+}
+#rails-env.development .stack.buttons-right ul, #rails-env.development .stack.buttons-right ol, #rails-env.development .stack.buttons-right legend, #rails-env.development .stack.buttons-right p {
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .stack.buttons-right li {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rails-env.development .stack.buttons-right fieldset {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .stack.buttons-right fieldset:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .stack.buttons-right abbr, #rails-env.development .stack.buttons-right acronym {
+  border: 0;
+  font-variant: normal;
+  font-weight: normal;
+}
+#rails-env.development .stack.buttons-right ol, #rails-env.development .stack.buttons-right ul {
+  list-style: none;
+}
+#rails-env.development .stack.buttons-right label {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .stack.buttons-right label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .stack.buttons-right input, #rails-env.development .stack.buttons-right textarea {
+  vertical-align: middle;
+}
+#rails-env.development .stack.buttons-right .check_boxes input, #rails-env.development .stack.buttons-right .radio input {
+  margin: 0;
+}
+#rails-env.development .stack.buttons-right .check_boxes label, #rails-env.development .stack.buttons-right .radio label {
+  cursor: pointer;
+}
+#rails-env.development .stack.buttons-right .hidden {
+  display: none;
+}
+#rails-env.development .stack.buttons-right .date li, #rails-env.development .stack.buttons-right .time li, #rails-env.development .stack.buttons-right .datetime li {
+  float: left;
+  width: auto;
+  clear: none;
+}
+#rails-env.development .stack.buttons-right .date label, #rails-env.development .stack.buttons-right .time label, #rails-env.development .stack.buttons-right .datetime label {
+  display: none;
+  width: auto;
+}
+#rails-env.development .stack.buttons-right .date input, #rails-env.development .stack.buttons-right .time input, #rails-env.development .stack.buttons-right .datetime input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .stack.buttons-right .errors {
+  list-style: square;
+}
+#rails-env.development .stack.buttons-right .errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+  float: none;
+  clear: both;
+}
+#rails-env.development .stack.buttons-right .inputs {
+  z-index: 99;
+}
+#rails-env.development .stack.buttons-right .buttons li {
+  float: left;
+}
+#rails-env.development .stack.buttons-right li {
+  *display: inline-block;
+  display: block;
+}
+#rails-env.development .stack.buttons-right li:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .stack.buttons-right li fieldset {
+  border: none;
+  position: relative;
+  margin-top: 0px;
+}
+#rails-env.development .stack.buttons-right li legend {
+  display: block;
+  margin-bottom: 0;
+}
+#rails-env.development .stack.buttons-right li .label {
+  display: block;
+  clear: both;
+  background: transparent;
+}
+#rails-env.development .stack.buttons-right li ol {
+  float: left;
+  margin: 0;
+}
+#rails-env.development .stack.buttons-right li ol li {
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+#rails-env.development .stack.buttons-right fieldset {
+  width: 100%;
+}
+#rails-env.development .stack.buttons-right ol {
+  padding-left: 3%;
+}
+#rails-env.development .stack.buttons-right input {
+  clear: both;
+  float: none;
+}
+#rails-env.development .stack.buttons-right li {
+  display: block;
+  clear: both;
+  float: none;
+  width: 100%;
+}
+#rails-env.development .stack.buttons-right li ol {
+  padding: 0;
+}
+#rails-env.development .stack.buttons-right li li {
+  clear: none;
+  width: auto;
+}
+#rails-env.development .stack.buttons-right li fieldset legend, #rails-env.development .stack.buttons-right li fieldset legend .label {
+  display: block;
+  clear: both;
+}
+#rails-env.development .stack.buttons-right li fieldset .label {
+  position: relative;
+}
+#rails-env.development .stack.buttons-right li fieldset label, #rails-env.development .stack.buttons-right li fieldset input {
+  width: auto;
+}
+#rails-env.development .stack.buttons-right .date ol, #rails-env.development .stack.buttons-right .time ol, #rails-env.development .stack.buttons-right .datetime ol {
+  width: 100%;
+}
+#rails-env.development .stack.buttons-right .date li, #rails-env.development .stack.buttons-right .time li, #rails-env.development .stack.buttons-right .datetime li {
+  display: inline;
+  clear: none;
+  float: left;
+  padding-right: 1.5%;
+}
+#rails-env.development .stack.buttons-right .checkbox li, #rails-env.development .stack.buttons-right .radio li {
+  display: block;
+}
+#rails-env.development .stack.buttons-right .checkbox input, #rails-env.development .stack.buttons-right .radio input {
+  border: none;
+}
+#rails-env.development .stack.buttons-right label {
+  display: block;
+  clear: both;
+  float: none;
+  width: 92%;
+}
+#rails-env.development .stack.buttons-right input, #rails-env.development .stack.buttons-right textarea {
+  width: 92%;
+}
+#rails-env.development .stack.buttons-right select {
+  width: auto;
+}
+#rails-env.development .stack.buttons-right .errors li {
+  display: list-item;
+}
+#rails-env.development .stack.buttons-right .buttons ol {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#rails-env.development .stack.buttons-right .buttons li {
+  float: right;
+  width: auto;
+  clear: none;
+  display: inline;
+}
+#rails-env.development .stack.buttons-right .buttons input {
+  width: auto;
+}
+#rails-env.development .stack.buttons-right #errorExplanation {
+  width: 97%;
+}
+#rails-env.development .stack.buttons-right .label {
+  #left: -0.5em;
+  #position: relative;
+}
+#rails-env.development .float-left ul, #rails-env.development .float-left ol, #rails-env.development .float-left legend, #rails-env.development .float-left p {
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-left li {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rails-env.development .float-left fieldset {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-left fieldset:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-left abbr, #rails-env.development .float-left acronym {
+  border: 0;
+  font-variant: normal;
+  font-weight: normal;
+}
+#rails-env.development .float-left ol, #rails-env.development .float-left ul {
+  list-style: none;
+}
+#rails-env.development .float-left label {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-left label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-left input, #rails-env.development .float-left textarea {
+  vertical-align: middle;
+}
+#rails-env.development .float-left .check_boxes input, #rails-env.development .float-left .radio input {
+  margin: 0;
+}
+#rails-env.development .float-left .check_boxes label, #rails-env.development .float-left .radio label {
+  cursor: pointer;
+}
+#rails-env.development .float-left .hidden {
+  display: none;
+}
+#rails-env.development .float-left .date li, #rails-env.development .float-left .time li, #rails-env.development .float-left .datetime li {
+  float: left;
+  width: auto;
+  clear: none;
+}
+#rails-env.development .float-left .date label, #rails-env.development .float-left .time label, #rails-env.development .float-left .datetime label {
+  display: none;
+  width: auto;
+}
+#rails-env.development .float-left .date input, #rails-env.development .float-left .time input, #rails-env.development .float-left .datetime input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-left .errors {
+  list-style: square;
+}
+#rails-env.development .float-left .errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+  float: none;
+  clear: both;
+}
+#rails-env.development .float-left .inputs {
+  z-index: 99;
+}
+#rails-env.development .float-left .buttons li {
+  float: left;
+}
+#rails-env.development .float-left li {
+  *display: inline-block;
+  display: block;
+}
+#rails-env.development .float-left li:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-left li fieldset {
+  border: none;
+  position: relative;
+  margin-top: 0px;
+}
+#rails-env.development .float-left li legend {
+  display: block;
+  margin-bottom: 0;
+}
+#rails-env.development .float-left li .label {
+  display: block;
+  clear: both;
+  background: transparent;
+}
+#rails-env.development .float-left li ol {
+  float: left;
+  margin: 0;
+}
+#rails-env.development .float-left li ol li {
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+#rails-env.development .float-left fieldset {
+  width: 100%;
+}
+#rails-env.development .float-left label {
+  float: left;
+  width: 18%;
+  text-align: left;
+  padding-left: 2%;
+}
+#rails-env.development .float-left li ol {
+  padding: 0 8% 0 20%;
+}
+#rails-env.development .float-left li fieldset legend, #rails-env.development .float-left li fieldset legend .label {
+  display: block;
+}
+#rails-env.development .float-left li fieldset legend {
+  width: 18%;
+  text-align: left;
+  display: inline;
+  float: left;
+  clear: none;
+  padding-left: 2%;
+  width: 98%;
+}
+#rails-env.development .float-left li fieldset .label {
+  position: absolute;
+  width: 18%;
+  top: 0px;
+  left: 2%;
+}
+#rails-env.development .float-left li fieldset label {
+  padding-left: 0;
+}
+#rails-env.development .float-left li fieldset label, #rails-env.development .float-left li fieldset input {
+  width: auto;
+  display: inline;
+  clear: none;
+  text-align: left;
+}
+#rails-env.development .float-left li fieldset select {
+  padding: 0;
+  clear: both;
+  display: block;
+}
+#rails-env.development .float-left .inline-hints, #rails-env.development .float-left .inline-errors, #rails-env.development .float-left .errors {
+  margin: 0 0 0 20%;
+}
+#rails-env.development .float-left input, #rails-env.development .float-left textarea {
+  width: 72%;
+}
+#rails-env.development .float-left select {
+  width: auto;
+}
+#rails-env.development .float-left .checkbox li, #rails-env.development .float-left .radio li {
+  display: block;
+  clear: both;
+}
+#rails-env.development .float-left .checkbox input, #rails-env.development .float-left .radio input {
+  border: none;
+}
+#rails-env.development .float-left .buttons {
+  padding-left: 20%;
+  width: 80%;
+}
+#rails-env.development .float-left .buttons input {
+  width: auto;
+}
+#rails-env.development .float-left .buttons li {
+  width: auto;
+  float: left;
+  display: inline;
+}
+#rails-env.development .float-left #errorExplanation {
+  margin-left: 20%;
+  width: 72%;
+}
+#rails-env.development .float-left.buttons-right ul, #rails-env.development .float-left.buttons-right ol, #rails-env.development .float-left.buttons-right legend, #rails-env.development .float-left.buttons-right p {
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-left.buttons-right li {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rails-env.development .float-left.buttons-right fieldset {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-left.buttons-right fieldset:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-left.buttons-right abbr, #rails-env.development .float-left.buttons-right acronym {
+  border: 0;
+  font-variant: normal;
+  font-weight: normal;
+}
+#rails-env.development .float-left.buttons-right ol, #rails-env.development .float-left.buttons-right ul {
+  list-style: none;
+}
+#rails-env.development .float-left.buttons-right label {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-left.buttons-right label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-left.buttons-right input, #rails-env.development .float-left.buttons-right textarea {
+  vertical-align: middle;
+}
+#rails-env.development .float-left.buttons-right .check_boxes input, #rails-env.development .float-left.buttons-right .radio input {
+  margin: 0;
+}
+#rails-env.development .float-left.buttons-right .check_boxes label, #rails-env.development .float-left.buttons-right .radio label {
+  cursor: pointer;
+}
+#rails-env.development .float-left.buttons-right .hidden {
+  display: none;
+}
+#rails-env.development .float-left.buttons-right .date li, #rails-env.development .float-left.buttons-right .time li, #rails-env.development .float-left.buttons-right .datetime li {
+  float: left;
+  width: auto;
+  clear: none;
+}
+#rails-env.development .float-left.buttons-right .date label, #rails-env.development .float-left.buttons-right .time label, #rails-env.development .float-left.buttons-right .datetime label {
+  display: none;
+  width: auto;
+}
+#rails-env.development .float-left.buttons-right .date input, #rails-env.development .float-left.buttons-right .time input, #rails-env.development .float-left.buttons-right .datetime input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-left.buttons-right .errors {
+  list-style: square;
+}
+#rails-env.development .float-left.buttons-right .errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+  float: none;
+  clear: both;
+}
+#rails-env.development .float-left.buttons-right .inputs {
+  z-index: 99;
+}
+#rails-env.development .float-left.buttons-right .buttons li {
+  float: left;
+}
+#rails-env.development .float-left.buttons-right li {
+  *display: inline-block;
+  display: block;
+}
+#rails-env.development .float-left.buttons-right li:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-left.buttons-right li fieldset {
+  border: none;
+  position: relative;
+  margin-top: 0px;
+}
+#rails-env.development .float-left.buttons-right li legend {
+  display: block;
+  margin-bottom: 0;
+}
+#rails-env.development .float-left.buttons-right li .label {
+  display: block;
+  clear: both;
+  background: transparent;
+}
+#rails-env.development .float-left.buttons-right li ol {
+  float: left;
+  margin: 0;
+}
+#rails-env.development .float-left.buttons-right li ol li {
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+#rails-env.development .float-left.buttons-right fieldset {
+  width: 100%;
+}
+#rails-env.development .float-left.buttons-right label {
+  float: left;
+  width: 18%;
+  text-align: left;
+  padding-left: 2%;
+}
+#rails-env.development .float-left.buttons-right li ol {
+  padding: 0 8% 0 20%;
+}
+#rails-env.development .float-left.buttons-right li fieldset legend, #rails-env.development .float-left.buttons-right li fieldset legend .label {
+  display: block;
+}
+#rails-env.development .float-left.buttons-right li fieldset legend {
+  width: 18%;
+  text-align: left;
+  display: inline;
+  float: left;
+  clear: none;
+  padding-left: 2%;
+  width: 98%;
+}
+#rails-env.development .float-left.buttons-right li fieldset .label {
+  position: absolute;
+  width: 18%;
+  top: 0px;
+  left: 2%;
+}
+#rails-env.development .float-left.buttons-right li fieldset label {
+  padding-left: 0;
+}
+#rails-env.development .float-left.buttons-right li fieldset label, #rails-env.development .float-left.buttons-right li fieldset input {
+  width: auto;
+  display: inline;
+  clear: none;
+  text-align: left;
+}
+#rails-env.development .float-left.buttons-right li fieldset select {
+  padding: 0;
+  clear: both;
+  display: block;
+}
+#rails-env.development .float-left.buttons-right .inline-hints, #rails-env.development .float-left.buttons-right .inline-errors, #rails-env.development .float-left.buttons-right .errors {
+  margin: 0 0 0 20%;
+}
+#rails-env.development .float-left.buttons-right input, #rails-env.development .float-left.buttons-right textarea {
+  width: 72%;
+}
+#rails-env.development .float-left.buttons-right select {
+  width: auto;
+}
+#rails-env.development .float-left.buttons-right .checkbox li, #rails-env.development .float-left.buttons-right .radio li {
+  display: block;
+  clear: both;
+}
+#rails-env.development .float-left.buttons-right .checkbox input, #rails-env.development .float-left.buttons-right .radio input {
+  border: none;
+}
+#rails-env.development .float-left.buttons-right .buttons {
+  padding-left: 20%;
+  width: 80%;
+}
+#rails-env.development .float-left.buttons-right .buttons input {
+  width: auto;
+}
+#rails-env.development .float-left.buttons-right .buttons ol {
+  padding-right: 2%;
+}
+#rails-env.development .float-left.buttons-right .buttons li {
+  width: auto;
+  float: right;
+  display: inline;
+}
+#rails-env.development .float-left.buttons-right #errorExplanation {
+  margin-left: 20%;
+  width: 72%;
+}
+#rails-env.development .float-right ul, #rails-env.development .float-right ol, #rails-env.development .float-right legend, #rails-env.development .float-right p {
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-right li {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rails-env.development .float-right fieldset {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-right fieldset:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-right abbr, #rails-env.development .float-right acronym {
+  border: 0;
+  font-variant: normal;
+  font-weight: normal;
+}
+#rails-env.development .float-right ol, #rails-env.development .float-right ul {
+  list-style: none;
+}
+#rails-env.development .float-right label {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-right label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-right input, #rails-env.development .float-right textarea {
+  vertical-align: middle;
+}
+#rails-env.development .float-right .check_boxes input, #rails-env.development .float-right .radio input {
+  margin: 0;
+}
+#rails-env.development .float-right .check_boxes label, #rails-env.development .float-right .radio label {
+  cursor: pointer;
+}
+#rails-env.development .float-right .hidden {
+  display: none;
+}
+#rails-env.development .float-right .date li, #rails-env.development .float-right .time li, #rails-env.development .float-right .datetime li {
+  float: left;
+  width: auto;
+  clear: none;
+}
+#rails-env.development .float-right .date label, #rails-env.development .float-right .time label, #rails-env.development .float-right .datetime label {
+  display: none;
+  width: auto;
+}
+#rails-env.development .float-right .date input, #rails-env.development .float-right .time input, #rails-env.development .float-right .datetime input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-right .errors {
+  list-style: square;
+}
+#rails-env.development .float-right .errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+  float: none;
+  clear: both;
+}
+#rails-env.development .float-right .inputs {
+  z-index: 99;
+}
+#rails-env.development .float-right .buttons li {
+  float: left;
+}
+#rails-env.development .float-right li {
+  *display: inline-block;
+  display: block;
+}
+#rails-env.development .float-right li:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-right li fieldset {
+  border: none;
+  position: relative;
+  margin-top: 0px;
+}
+#rails-env.development .float-right li legend {
+  display: block;
+  margin-bottom: 0;
+}
+#rails-env.development .float-right li .label {
+  display: block;
+  clear: both;
+  background: transparent;
+}
+#rails-env.development .float-right li ol {
+  float: left;
+  margin: 0;
+}
+#rails-env.development .float-right li ol li {
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+#rails-env.development .float-right fieldset {
+  width: 100%;
+}
+#rails-env.development .float-right label {
+  float: left;
+  width: 18%;
+  text-align: right;
+  padding-right: 2%;
+}
+#rails-env.development .float-right li ol {
+  padding: 0 8% 0 20%;
+}
+#rails-env.development .float-right li fieldset legend, #rails-env.development .float-right li fieldset legend .label {
+  display: block;
+}
+#rails-env.development .float-right li fieldset legend {
+  width: 18%;
+  text-align: right;
+  display: inline;
+  float: left;
+  clear: none;
+  padding-right: 2%;
+  width: 98%;
+}
+#rails-env.development .float-right li fieldset .label {
+  position: absolute;
+  width: 18%;
+  top: 0px;
+  left: 0;
+}
+#rails-env.development .float-right li fieldset label {
+  padding-left: 0;
+}
+#rails-env.development .float-right li fieldset label, #rails-env.development .float-right li fieldset input {
+  width: auto;
+  display: inline;
+  clear: none;
+  text-align: left;
+}
+#rails-env.development .float-right li fieldset select {
+  padding: 0;
+  clear: both;
+  display: block;
+}
+#rails-env.development .float-right .inline-hints, #rails-env.development .float-right .inline-errors, #rails-env.development .float-right .errors {
+  margin: 0 0 0 20%;
+}
+#rails-env.development .float-right input, #rails-env.development .float-right textarea {
+  width: 72%;
+}
+#rails-env.development .float-right select {
+  width: auto;
+}
+#rails-env.development .float-right .checkbox li, #rails-env.development .float-right .radio li {
+  display: block;
+  clear: both;
+}
+#rails-env.development .float-right .checkbox input, #rails-env.development .float-right .radio input {
+  border: none;
+}
+#rails-env.development .float-right .buttons {
+  padding-left: 20%;
+  width: 80%;
+}
+#rails-env.development .float-right .buttons input {
+  width: auto;
+}
+#rails-env.development .float-right .buttons li {
+  width: auto;
+  float: left;
+  display: inline;
+}
+#rails-env.development .float-right #errorExplanation {
+  margin-left: 20%;
+  width: 72%;
+}
+#rails-env.development .float-right.buttons-right ul, #rails-env.development .float-right.buttons-right ol, #rails-env.development .float-right.buttons-right legend, #rails-env.development .float-right.buttons-right p {
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-right.buttons-right li {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#rails-env.development .float-right.buttons-right fieldset {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-right.buttons-right fieldset:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-right.buttons-right abbr, #rails-env.development .float-right.buttons-right acronym {
+  border: 0;
+  font-variant: normal;
+  font-weight: normal;
+}
+#rails-env.development .float-right.buttons-right ol, #rails-env.development .float-right.buttons-right ul {
+  list-style: none;
+}
+#rails-env.development .float-right.buttons-right label {
+  display: block;
+  *display: inline-block;
+}
+#rails-env.development .float-right.buttons-right label:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-right.buttons-right input, #rails-env.development .float-right.buttons-right textarea {
+  vertical-align: middle;
+}
+#rails-env.development .float-right.buttons-right .check_boxes input, #rails-env.development .float-right.buttons-right .radio input {
+  margin: 0;
+}
+#rails-env.development .float-right.buttons-right .check_boxes label, #rails-env.development .float-right.buttons-right .radio label {
+  cursor: pointer;
+}
+#rails-env.development .float-right.buttons-right .hidden {
+  display: none;
+}
+#rails-env.development .float-right.buttons-right .date li, #rails-env.development .float-right.buttons-right .time li, #rails-env.development .float-right.buttons-right .datetime li {
+  float: left;
+  width: auto;
+  clear: none;
+}
+#rails-env.development .float-right.buttons-right .date label, #rails-env.development .float-right.buttons-right .time label, #rails-env.development .float-right.buttons-right .datetime label {
+  display: none;
+  width: auto;
+}
+#rails-env.development .float-right.buttons-right .date input, #rails-env.development .float-right.buttons-right .time input, #rails-env.development .float-right.buttons-right .datetime input {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#rails-env.development .float-right.buttons-right .errors {
+  list-style: square;
+}
+#rails-env.development .float-right.buttons-right .errors li {
+  padding: 0;
+  border: none;
+  display: list-item;
+  float: none;
+  clear: both;
+}
+#rails-env.development .float-right.buttons-right .inputs {
+  z-index: 99;
+}
+#rails-env.development .float-right.buttons-right .buttons li {
+  float: left;
+}
+#rails-env.development .float-right.buttons-right li {
+  *display: inline-block;
+  display: block;
+}
+#rails-env.development .float-right.buttons-right li:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#rails-env.development .float-right.buttons-right li fieldset {
+  border: none;
+  position: relative;
+  margin-top: 0px;
+}
+#rails-env.development .float-right.buttons-right li legend {
+  display: block;
+  margin-bottom: 0;
+}
+#rails-env.development .float-right.buttons-right li .label {
+  display: block;
+  clear: both;
+  background: transparent;
+}
+#rails-env.development .float-right.buttons-right li ol {
+  float: left;
+  margin: 0;
+}
+#rails-env.development .float-right.buttons-right li ol li {
+  padding: 0;
+  border: 0;
+  display: inline;
+}
+#rails-env.development .float-right.buttons-right fieldset {
+  width: 100%;
+}
+#rails-env.development .float-right.buttons-right label {
+  float: left;
+  width: 18%;
+  text-align: right;
+  padding-right: 2%;
+}
+#rails-env.development .float-right.buttons-right li ol {
+  padding: 0 8% 0 20%;
+}
+#rails-env.development .float-right.buttons-right li fieldset legend, #rails-env.development .float-right.buttons-right li fieldset legend .label {
+  display: block;
+}
+#rails-env.development .float-right.buttons-right li fieldset legend {
+  width: 18%;
+  text-align: right;
+  display: inline;
+  float: left;
+  clear: none;
+  padding-right: 2%;
+  width: 98%;
+}
+#rails-env.development .float-right.buttons-right li fieldset .label {
+  position: absolute;
+  width: 18%;
+  top: 0px;
+  left: 0;
+}
+#rails-env.development .float-right.buttons-right li fieldset label {
+  padding-left: 0;
+}
+#rails-env.development .float-right.buttons-right li fieldset label, #rails-env.development .float-right.buttons-right li fieldset input {
+  width: auto;
+  display: inline;
+  clear: none;
+  text-align: left;
+}
+#rails-env.development .float-right.buttons-right li fieldset select {
+  padding: 0;
+  clear: both;
+  display: block;
+}
+#rails-env.development .float-right.buttons-right .inline-hints, #rails-env.development .float-right.buttons-right .inline-errors, #rails-env.development .float-right.buttons-right .errors {
+  margin: 0 0 0 20%;
+}
+#rails-env.development .float-right.buttons-right input, #rails-env.development .float-right.buttons-right textarea {
+  width: 72%;
+}
+#rails-env.development .float-right.buttons-right select {
+  width: auto;
+}
+#rails-env.development .float-right.buttons-right .checkbox li, #rails-env.development .float-right.buttons-right .radio li {
+  display: block;
+  clear: both;
+}
+#rails-env.development .float-right.buttons-right .checkbox input, #rails-env.development .float-right.buttons-right .radio input {
+  border: none;
+}
+#rails-env.development .float-right.buttons-right .buttons {
+  padding-left: 20%;
+  width: 80%;
+}
+#rails-env.development .float-right.buttons-right .buttons input {
+  width: auto;
+}
+#rails-env.development .float-right.buttons-right .buttons ol {
+  padding-right: 2%;
+}
+#rails-env.development .float-right.buttons-right .buttons li {
+  width: auto;
+  float: right;
+  display: inline;
+}
+#rails-env.development .float-right.buttons-right #errorExplanation {
+  margin-left: 20%;
+  width: 72%;
+}
+#rails-env.development .float-right.input-float .radio ol, #rails-env.development .float-right.input-float .check_boxes ol, #rails-env.development .float-left.input-float .radio ol, #rails-env.development .float-left.input-float .check_boxes ol, #rails-env.development .stack.input-float .radio ol, #rails-env.development .stack.input-float .check_boxes ol {
+  display: inline;
+  float: left;
+  clear: none;
+}
+#rails-env.development .float-right.input-float .radio li, #rails-env.development .float-right.input-float .check_boxes li, #rails-env.development .float-left.input-float .radio li, #rails-env.development .float-left.input-float .check_boxes li, #rails-env.development .stack.input-float .radio li, #rails-env.development .stack.input-float .check_boxes li {
+  width: auto;
+  display: inline;
+  float: left;
+  clear: none;
+}
+#rails-env.development .float-right.input-float .radio input, #rails-env.development .float-right.input-float .check_boxes input, #rails-env.development .float-left.input-float .radio input, #rails-env.development .float-left.input-float .check_boxes input, #rails-env.development .stack.input-float .radio input, #rails-env.development .stack.input-float .check_boxes input {
+  float: none;
+  display: inline;
+}
+#rails-env.development .float-right.input-float .radio label, #rails-env.development .float-right.input-float .check_boxes label, #rails-env.development .float-left.input-float .radio label, #rails-env.development .float-left.input-float .check_boxes label, #rails-env.development .stack.input-float .radio label, #rails-env.development .stack.input-float .check_boxes label {
+  display: block;
+  clear: none;
+  width: auto;
+  padding-left: 0;
+  line-height: 150%;
+  margin-right: 10px;
+}
+#rails-env.development .float-right.input-grid .radio ol, #rails-env.development .float-right.input-grid .check_boxes ol, #rails-env.development .float-left.input-grid .radio ol, #rails-env.development .float-left.input-grid .check_boxes ol, #rails-env.development .stack.input-grid .radio ol, #rails-env.development .stack.input-grid .check_boxes ol {
+  display: inline;
+  float: left;
+  clear: none;
+}
+#rails-env.development .float-right.input-grid .radio li, #rails-env.development .float-right.input-grid .check_boxes li, #rails-env.development .float-left.input-grid .radio li, #rails-env.development .float-left.input-grid .check_boxes li, #rails-env.development .stack.input-grid .radio li, #rails-env.development .stack.input-grid .check_boxes li {
+  display: inline;
+  float: left;
+  clear: none;
+  width: 200px;
+}
+#rails-env.development .float-right.input-grid .radio label, #rails-env.development .float-right.input-grid .check_boxes label, #rails-env.development .float-left.input-grid .radio label, #rails-env.development .float-left.input-grid .check_boxes label, #rails-env.development .stack.input-grid .radio label, #rails-env.development .stack.input-grid .check_boxes label {
+  display: inline;
+  float: left;
+  clear: none;
+  width: auto;
+  line-height: 150%;
+}

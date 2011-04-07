@@ -26,6 +26,7 @@ PLATFORMS
 
 DEPENDENCIES
   grid-coordinates (>= 1.1.3)
+  i18n
   maruku (>= 0.6.0)
   meyer-reset (>= 2.0.0)
   serve (>= 1.0.0)

@@ -2,9 +2,11 @@
 
 gem 'activesupport'
 gem 'serve'
+gem 'i18n'
 
 require 'serve'
 require 'serve/rack'
+require 'i18n'
 
 require 'sass/plugin/rack'
 require 'compass'
