@@ -1,0 +1,226 @@
+- title = "Project Request Dashboard"
+- disciplines = [:aero, :chem, :civ, :env, :eee, :icct, :mat, :mech, :nano, :pde, :pdt, :med, :sport, :euro]
+- requirements = {:aero => 37,
+    :chem => 16,
+    :civ => 76,
+    :env => 2,
+    :eee  => 26,
+    :icct => 7,
+    :mat => 17,
+    :mech  => 41,
+    :nano => 3,
+    :pde  => 9,
+    :pdt  => 10,
+    :med  => 2,
+    :sport => 66,
+    :euro => 1}
+- reqests = {:aero => 37,
+    :chem => 16,
+    :civ => 76,
+    :env => 2,
+    :eee  => 26,
+    :icct => 7,
+    :mat => 17,
+    :mech  => 41,
+    :nano => 3,
+    :pde  => 9,
+    :pdt  => 10,
+    :med  => 2,
+    :sport => 66,
+    :euro => 1}
+%h1 
+  =title
+  
+%h2 Planner
+%table{ :summary => "Planning Totals", :border=>1 }
+  %caption 
+    Planning Totals
+  %col
+  %colgroup{:span => 13}
+  %colgroup
+    %col
+    %col
+    %col
+  %thead
+    %tr
+      %td Projects
+      -# Sever doesn't use :locals. See: Pull request https://github.com/jlong/serve/pull/21
+      -# Work around is to define locals directly in the partial
+      = render :partial=>'discipline_headings', :locals => {:disciplines => disciplines}
+      %td 2010
+      %td 2011
+      %td Allocated
+      %td Slots left
+  %tbody
+    = render :partial=>'project_requests',
+      :locals => {:disciplines => disciplines,
+      :requirements => requirements}
+      
+%h2 Projects requested from staff
+%table{ :summary => "Project requests for C2EC", :border=>1 }
+  %caption 
+    Civil and Computational Engineering Research Centre (C2EC)
+  %colgroup{:span => 4}
+  %colgroup{:span => 13}
+  %colgroup
+    %col
+    %col
+    %col
+  %thead
+    %tr
+      %td Staff #
+      %td Title
+      %td Given name
+      %td Last name
+      %td Email
+      = render :partial => 'discipline_headings', :local=>{:disciplines => disciplines}
+      %td Last Yr
+      %td This yr
+      %td Allocated
+      %td Slots left
+  %tbody
+    %tr
+      %td 30628900000 
+      %td Prof  
+      %td Sondipon    
+      %td Adhikari  
+      %td 
+        %a{:href=>'mailto:s.adhikari@swansea.ac.uk'} s.adhikari@swansea.ac.uk
+      %td 
+        %input{ :type=>'text', :value=>"2", :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :value=>"2", :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex2', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex3', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex4', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex5', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex6', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex7', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex8', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 4
+      %td
+        %input{ :type=>'text', :name=>'req', :value=>5, :size=>1 }
+      %td 0
+      %td 5
+    %tr
+      %td
+      %td Dr  
+      %td Rowan 
+      %td Brown 
+      %td 
+        %a{:href=>'mailto:m.r.brown@swan.ac.uk'} m.r.brown@swan.ac.uk
+      %td 
+        %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :value=>1, :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex2', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex3', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex4', :size=>1 }
+      %td 
+        %input{ :type=>'text', :value=>1, :name=>'ex5', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex6', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex7', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex8', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 2
+      %td
+        %input{ :type=>'text', :name=>'req', :value=>3, :size=>1 }
+      %td 0
+      %td 3
+    %tr
+      %td 10173600000 
+      %td Dr
+      %td Mike
+      %td Clee
+      %td  
+        %a{:href=>'mailto:m.j.clee@swansea.ac.uk'} m.j.clee@swansea.ac.uk
+      %td 
+        %input{ :type=>'text', :value=>"2", :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :value=>"2", :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex2', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex3', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex4', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex5', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex6', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex7', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex8', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 6
+      %td
+        %input{ :type=>'text', :name=>'req', :value=>"6", :size=>1 }
+      %td 0
+      %td 6                  
+    %tr
+      %td 10794500000 
+      %td Prof  
+      %td Mark    
+      %td Cross 
+      %td 
+        %a{:href => 'mailto:m.cross@swansea.ac.uk'} m.cross@swansea.ac.uk
+      %td 
+        %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex2', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex3', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex4', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex5', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex6', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex7', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex8', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 
+        %input{ :type=>'text', :name=>'ex9', :size=>1 }
+      %td 0
+      %td
+        %input{ :type=>'text', :name=>'req', :value=>"0", :size=>1 }
+      %td 0
+      %td 0
+      

@@ -1,0 +1,66 @@
+-# This is the same as the requirements partial!!
+- disciplines = [:aero, :chem, :civ, :env, :eee, :icct, :mat, :mech, :nano, :pde, :pdt, :med, :sport, :euro]
+- requests = {:aero => 51,
+    :chem => 25,
+    :civ => 96,
+    :env => 3,
+    :eee  => 31,
+    :icct => 7,
+    :mat => 20,
+    :mech  => 59,
+    :nano => 2,
+    :pde  => 9,
+    :pdt  => 10,
+    :med  => 2,
+    :sport => 68,
+    :euro => 5,
+    :total_last_year => 383}
+- requirements = {:aero => 37,
+    :chem => 16,
+    :civ => 76,
+    :env => 2,
+    :eee  => 26,
+    :icct => 7,
+    :mat => 17,
+    :mech  => 41,
+    :nano => 3,
+    :pde  => 9,
+    :pdt  => 10,
+    :med  => 2,
+    :sport => 66,
+    :euro => 1,
+    :total_last_year => 293}
+%tr
+  %td Required
+  - required = 0
+  - allocated = 0
+  - disciplines.each do |discipline|
+    - required += requirements[discipline]
+    %td
+      %input{:type => 'text', :size => 3, :value => requirements[discipline], :name => "#{discipline.to_s}_required_number"}
+  %td= requirements[:total_last_year]
+  %td= required
+  %td
+  %td
+%tr
+  %td Requested
+  - requested = 0
+  - allocated = 0
+  - disciplines.each do |discipline|
+    - requested += requests[discipline]
+    %td= requests[discipline]
+  %td= requests[:total_last_year]
+  %td= requested
+  %td
+  %td
+%tr
+  %td Surplus
+  - surplus= 0
+  - allocated = 0
+  - disciplines.each do |discipline|
+    - surplus += requests[discipline] - requirements[discipline]
+    %td= requests[discipline] - requirements[discipline]
+  %td= requests[:total_last_year] - requirements[:total_last_year]
+  %td= surplus
+  %td
+  %td
