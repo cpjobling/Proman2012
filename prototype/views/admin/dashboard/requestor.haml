@@ -28,6 +28,8 @@
     :med  => 2,
     :sport => 66,
     :euro => 1}
+- last_year = 2010
+- this_year = 2011
 %h1 
   =title
   
@@ -47,8 +49,8 @@
       -# Sever doesn't use :locals. See: Pull request https://github.com/jlong/serve/pull/21
       -# Work around is to define locals directly in the partial
       = render :partial=>'discipline_headings', :locals => {:disciplines => disciplines}
-      %td 2010
-      %td 2011
+      %td= last_year
+      %td= this_year
       %td Allocated
       %td Slots left
   %tbody
@@ -74,8 +76,8 @@
       %td Last name
       %td Email
       = render :partial => 'discipline_headings', :local=>{:disciplines => disciplines}
-      %td Last Yr
-      %td This yr
+      %td= last_year
+      %td= this_year
       %td Allocated
       %td Slots left
   %tbody

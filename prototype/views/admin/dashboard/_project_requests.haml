@@ -1,4 +1,6 @@
 -# This is the same as the requirements partial!!
+- last_year = 2010
+- this_year = 2011
 - disciplines = [:aero, :chem, :civ, :env, :eee, :icct, :mat, :mech, :nano, :pde, :pdt, :med, :sport, :euro]
 - requests = {:aero => 51,
     :chem => 25,
@@ -40,8 +42,8 @@
       %input{:type => 'text', :size => 3, :value => requirements[discipline], :name => "#{discipline.to_s}_required_number"}
   %td= requirements[:total_last_year]
   %td= required
-  %td
-  %td
+  %td= allocated
+  %td= required - allocated
 %tr
   %td Requested
   - requested = 0
