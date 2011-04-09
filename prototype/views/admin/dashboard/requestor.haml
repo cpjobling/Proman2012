@@ -30,6 +30,11 @@
     :euro => 1}
 - last_year = 2010
 - this_year = 2011
+- @sondipon = {:title => 'Prof', :given_name => 'Sondipon', :last_name => 'Adhikari', :email => 's.adhikari@swansea.ac.uk', :requests => {:aero=> 3, :civil => 2}}
+- @mike = {:title => 'Dr', :given_name => 'Mike', :last_name => 'Clee', :email => 'm.j.clee@swansea.ac.uk', :requests => {:aero=> 6}}
+- @rowan = {:title => 'Dr', :given_name => 'Rowan', :last_name => 'Brown', :email => 'm.r.brown@swan.ac.uk', :requests => {:civ => 1, :mech => 2}}
+- @cross = {:title => 'Prof', :given_name => 'Mark', :last_name => 'Cross', :email => 'm.cross@swansea.ac.uk', :requests => {:aero => 2, :civ=> 1}, :last_year => 0, :allocated => 0}
+- @c2ec = [ @sondipon, @clee, @cross, @rowan]
 %h1 
   =title
   
@@ -70,7 +75,6 @@
     %col
   %thead
     %tr
-      %td Staff #
       %td Title
       %td Given name
       %td Last name
@@ -82,12 +86,12 @@
       %td Slots left
   %tbody
     %tr
-      %td 30628900000 
-      %td Prof  
-      %td Sondipon    
-      %td Adhikari  
+      %td= @sondipon[:title]
+      %td= @sondipon[:given_name]  
+      %td= @sondipon[:last_name]  
       %td 
-        %a{:href=>'mailto:s.adhikari@swansea.ac.uk'} s.adhikari@swansea.ac.uk
+        %a{:href=>"mailto:#{@sondipon[:email]}"}
+          = @sondipon[:email]
       %td 
         %input{ :type=>'text', :value=>"2", :name=>'ex1', :size=>1 }
       %td 
@@ -118,12 +122,12 @@
       %td 0
       %td 5
     %tr
-      %td
-      %td Dr  
-      %td Rowan 
-      %td Brown 
+      %td= @rowan[:title]
+      %td= @rowan[:given_name]  
+      %td= @rowan[:last_name]  
       %td 
-        %a{:href=>'mailto:m.r.brown@swan.ac.uk'} m.r.brown@swan.ac.uk
+        %a{:href=>"mailto:#{@rowan[:email]}"}
+          = @rowan[:email]
       %td 
         %input{ :type=>'text', :name=>'ex1', :size=>1 }
       %td 
@@ -154,12 +158,12 @@
       %td 0
       %td 3
     %tr
-      %td 10173600000 
-      %td Dr
-      %td Mike
-      %td Clee
-      %td  
-        %a{:href=>'mailto:m.j.clee@swansea.ac.uk'} m.j.clee@swansea.ac.uk
+      %td= @mike[:title]
+      %td= @mike[:given_name]  
+      %td= @mike[:last_name]  
+      %td 
+        %a{:href=>"mailto:#{@mike[:email]}"}
+          = @mike[:email]
       %td 
         %input{ :type=>'text', :value=>"2", :name=>'ex1', :size=>1 }
       %td 
@@ -190,39 +194,23 @@
       %td 0
       %td 6                  
     %tr
-      %td 10794500000 
-      %td Prof  
-      %td Mark    
-      %td Cross 
+      %td= @cross[:title]
+      %td= @cross[:given_name]  
+      %td= @cross[:last_name]  
       %td 
-        %a{:href => 'mailto:m.cross@swansea.ac.uk'} m.cross@swansea.ac.uk
-      %td 
-        %input{ :type=>'text', :name=>'ex1', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex1', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex1', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex2', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex3', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex4', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex5', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex6', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex7', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex8', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex9', :size=>1 }
-      %td 
-        %input{ :type=>'text', :name=>'ex9', :size=>1 }
-      %td 0
-      %td
-        %input{ :type=>'text', :name=>'req', :value=>"0", :size=>1 }
-      %td 0
-      %td 0
+        %a{:href=>"mailto:#{@cross[:email]}"}
+          = @cross[:email]
+      - @cross[:this_year] = 0
+      - disciplines.each do |discipline|
+        - if @cross[:requests][discipline] 
+          - @cross[:this_year] += @cross[:requests][discipline]
+          %td 
+            %input{ :type=>'text', :name=>'ex1', :size=>1, :value => @cross[:requests][discipline]  }
+        - else
+          %td 
+            %input{ :type=>'text', :name=>'ex1', :size=>1 }
+      %td= @cross[:last_year]
+      %td= @cross[:this_year]
+      %td= @cross[:allocated]
+      %td= @cross[:this_year] - @cross[:allocated]
       
