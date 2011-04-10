@@ -42,4 +42,12 @@ module ViewHelpers
   def current_page?(options)
     true
   end
+  
+  def blank?
+    respond_to?(:empty?) ? empty? : !self # From rails API
+  end
+  
+  def google_api_key
+    return ""
+  end
 end

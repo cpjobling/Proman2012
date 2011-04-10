@@ -205,7 +205,7 @@
         - if @cross[:requests][discipline] 
           - @cross[:this_year] += @cross[:requests][discipline]
           %td 
-            %input{ :type=>'text', :name=>'ex1', :size=>1, :value => @cross[:requests][discipline]  }
+            %input{ :type=>'text', :name=>'request', :size=>1, :value => @cross[:requests][discipline]  }
         - else
           %td 
             %input{ :type=>'text', :name=>'ex1', :size=>1 }

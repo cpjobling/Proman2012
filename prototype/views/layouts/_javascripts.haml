@@ -1,0 +1,26 @@
+-# Grab Google CDN's jQuery, with a protocol relative URL
+-# Looks for google_api_key first in ENV['GOOGLE_API_KEY'] then in config/google.yml
+-# remote_jquery and local_jquery helpers use minified jquery unless Rails.env is development
+- if !google_api_key.blank?
+  = javascript_include_tag "//www.google.com/jsapi?key=#{google_api_key}"
+  :javascript
+    google.load(#{ remote_jquery("1.5.1") });
+- else
+  %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js" type="text/javascript") 
+
+-# fall back to local jQuery if necessary
+:javascript
+  !window.jQuery && document.write(unescape('%3Cscript src="/javascripts/jquery.min.js"%3E%3C/script%3E'))
+  
+%script(src="/javascripts/rails.js" type="text/javascript")
+%script(src="/javascripts/plugins.js" type="text/javascript")
+%script(src="/javascripts/application.js" type="text/javascript")
+
+-# Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb
+/[if lt IE 7 ]
+  %script(src="/javascripts/dd_belatedpng.js" type="text/javascript")
+  :javascript
+    //DD_belatedPNG.fix('img, .png_bg');
+    
+-#  Append your own using content_for :javascripts
+= yield :javascripts

@@ -1,0 +1,56 @@
+- current_user = 'Chris Jobling'
+- site_name = 'Proman'
+!!! 5
+%html
+  %head
+    %title&= yield(:title) || site_name
+    %meta{ :content => "text/html;charset=UTF-8", "http-equiv" => "content-type" }
+    %meta{ :name => "description", :content => "" }/
+    %meta{ :name => "keywords", :content => "" }/
+    = stylesheet_link_tag :all 
+    = javascript_include_tag :defaults
+    = csrf_meta_tag  
+
+    = yield :head
+    
+  %body
+    .container
+      #navigation
+        = link_to "Home", "/"
+        |
+        - if current_user
+          = link_to_with_highlight "My Account", "/account"
+          |
+          = link_to_with_highlight "Logout", "/logout"
+        - else
+          = link_to_with_highlight "Register", "/sign_up"
+          |
+          = link_to_with_highlight "Login", "/login"
+      #header
+        %h1= proman
+        %h2= yield(:title)
+        #navset
+          -# = navigation [:home, :projects, :contact, :about]
+          = yield(:subnav)
+      #content
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}"
+        = yield
+      #sidebar
+        .block
+          %h3= yield :title_sidebar
+          .content
+            %p= yield :sidebar
+      #extra
+      #footer
+        %p
+          %em= yield :slogan
+        %p{:style => "font-size: xx-small; text-align: center;"}
+          = render 'shared/copyright_notice'
+          |
+          = link_to 'Terms of Service', '/about/tos' 
+          |
+          = link_to 'Contact Us', '/about/contact'
+          |
+          = link_to 'Software License', '/about/license'
+

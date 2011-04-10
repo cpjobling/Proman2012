@@ -10,6 +10,7 @@ require 'i18n'
 
 require 'sass/plugin/rack'
 require 'compass'
+require 'html5-boilerplate'
 
 # The project root directory
 root = ::File.dirname(__FILE__)
