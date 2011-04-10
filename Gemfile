@@ -10,6 +10,14 @@ gem 'haml'
 gem 'compass'
 gem 'html5-boilerplate'
 
+group :development do
+  gem 'rspec-rails'
+end
+group :test do
+  gem 'rspec'
+  gem 'webrat'
+end
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
