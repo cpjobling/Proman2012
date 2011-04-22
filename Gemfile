@@ -1,4 +1,5 @@
 source 'http://rubygems.org'
+source 'http://gems.github.com'
 
 gem 'rails', '3.0.6'
 
@@ -13,11 +14,19 @@ gem 'html5-boilerplate'
 
 group :development do
   gem 'rspec-rails'
+  gem 'annotate-models'
+  gem 'faker'
 end
+
 group :test do
   gem 'rspec'
-  gem 'webrat'
+  gem 'spork'
+  gem 'capybara'
+  gem 'cucumber-rails'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
